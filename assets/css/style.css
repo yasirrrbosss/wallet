@@ -1,0 +1,59 @@
+input {
+    width: 450px;
+    height: 35px;
+    font-family: "Power Grotesk";
+    src: local("Power Grotesk UltraBold"),
+         url('../fonts/power-grotesk/PowerGrotesk-UltraBold.woff2'),
+         url('../fonts/power-grotesk/PowerGrotesk-UltraBold.woff');
+    font-size: medium;
+    text-rendering: optimizeLegibility;
+    padding: 4px;
+    color: #000;
+    border-radius: 6px;
+
+
+
+}
+button {
+    border: 1px solid #c21c1c;
+    width: 150px;
+    height: 40px;
+	background: #c21c1c;
+	padding: 6px;
+	color: #fff;
+    font-size: large;
+	border-radius: 8px;
+    font-family: "Power Grotesk";
+    src: local("Power Grotesk UltraBold"),
+         url('../fonts/power-grotesk/PowerGrotesk-UltraBold.woff2'),
+         url('../fonts/power-grotesk/PowerGrotesk-UltraBold.woff');
+    
+}
+button:hover {
+    background: #fff;
+    color: #c21c1c;
+}
+
+p{
+    font-family: "Stolzl";
+    src: local("Stolzl Book"),
+         url('../fonts/stolzl/Stolzl-Book.woff2'),
+         url('../fonts/stolzl/Stolzl-Book.woff');
+
+    color: #fff;
+    font-size: 20px;
+}
+.lilita-one-regular {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+.headerrr {
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+

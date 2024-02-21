@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="zxx" class="uk-background-white dark:uk-background-gray-100 dark:uk-text-gray-20 uk-dark">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Goblin</title>
+        <meta name="description" content="Goblin Coin">
+        <meta name="theme-color" content="#741ff5">
+
+        <!-- preload head styles -->
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/swiper@8.3.2/swiper-bundle.min.css" as="style">
+        <link rel="preload" href="https://cdn.jsdelivr.net/npm/uikit@3.15.1/dist/css/uikit.min.css" as="style">
+
+        <!-- <link rel="preload" href="./assets/css/theme/main.min.css" as="style"> -->
+        <link rel="icon" type="image/x-icon" href="./assets/images/goblin/logo.png">
+
+        <!-- preload footer scripts -->
+        <link rel="preload" href="./assets/js/uikit.min.js" as="script">
+        <link rel="preload" href="./assets/js/uikit-components.js" as="script">
+        <link rel="preload" href="./assets/js/jquery.min.js" as="script">
+        <link rel="preload" href="./assets/js/swiper-bundle.min.js" as="script">
+        <link rel="preload" href="./assets/js/feather.min.js" as="script">
+        <link rel="preload" href="./assets/js/typed.min.js" as="script">
+        <link rel="preload" href="./assets/js/anime.min.js" as="script">
+        <link rel="preload" href="./assets/js/app.js" as="script">
+        <link rel="preload" href="./assets/js/data-attr-helper.js" as="script">
+        <link rel="preload" href="./assets/js/swiper-helper.js" as="script">
+        <link rel="preload" href="./assets/js/typed-helper.js" as="script">
+        <link rel="preload" href="./assets/js/anime-helper.js" as="script">
+
+        <!-- <link rel="preload" href="./assets/js/anime-helper-defined-timelines.js" as="script"> -->
+
+        <!-- include styles -->
+        <script src="./assets/js/app-head.js"></script>
+        <link rel="stylesheet" href="./assets/css/theme/main.min.css">
+
+        <!-- include scripts -->
+        <script src="./assets/js/uikit.min.js"></script>
+        <script src="./assets/js/uikit-components.js"></script>
+    </head>
+    <body class="uni-body"> 
+
+        <!-- Menu modal -->
+        <div id="uni_mobile_menu" class="uni-mobile-menu uk-offcanvas" data-uk-offcanvas="mode: push; overlay: true; flip: true; selPanel: .uk-offcanvas-bar-panel;">
+            <div class="uk-offcanvas-bar-panel uk-panel dark:uk-background-gray-100">
+                <div class="uni-mobile-menu-wrap uk-flex-column uk-flex-between" data-uk-height-viewport="offset-bottom: true;">
+                    <div class="uni-mobile-menu-content">
+                        <header class="uk-card uk-card-2xsmall uk-flex-middle uk-flex-between">
+                            <div class="uk-flex-1">
+                                <button aria-label="Close Menu" class="uk-offcanvas-close uk-button uk-button-small uk-button-icon uk-button-default uk-button-outline uk-radius-circle" type="button">
+                                    <i class="uk-icon-small" data-feather="arrow-left"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <h5 class="uk-h5 uk-text-uppercase uk-margin-remove">Navigation</h5>
+                            </div>
+                            <div class="uk-flex-1"></div>
+                        </header>
+                        <hr class="uk-margin-remove">
+                        <div class="uk-card uk-card-small">
+                            <div class="uk-panel">
+                                <ul class="uk-nav uk-nav-default">
+                                    <li class="uk-nav-header">Homepages</li>
+                                    <li><a href="#uni_about">About</a></li>
+                                    <li><a href="#uni_whyus">Roadmap</a></li>
+                                    <li><a href="#uni_contact">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+        <!-- Wrapper start -->
+        <div class="wrap uk-overflow-hidden">
+
+            <!-- Header start -->
+            <header class="uni-header uk-position-top">
+                <div class="uni-header-navbar" data-uk-sticky="top: 70; show-on-up: false; animation: uk-animation-slide-top">
+                    <div class="uk-container">
+                        <nav class="uk-navbar uk-navbar-container uk-navbar-transparent" data-uk-navbar>
+                            <div class="uk-navbar-top">
+                                <div class="uk-navbar-left uk-flex-1">
+                                    <a class="uk-logo uk-navbar-item uk-h4 uk-h3@m uk-margin-remove" href=""> 
+                                        <img class="uk-visible" style="width: 60px;" src="./assets/images/goblin/logo.png" alt="Goblin" loading="lazy"> 
+                                        <img class="uk-visible" style="width: 60px;" src="./assets/images/goblin/text.png" alt="Goblin" loading="lazy"> 
+                                </div>
+
+                                <div class="uk-navbar-center"></div>
+
+                                <div class="uk-navbar-right uk-flex-1 uk-flex-right">
+                                    
+                                    <div class="uk-navbar-item uk-hidden@m">
+                                        <a href="#uni_mobile_menu" data-uk-toggle>
+                                            <span class="uk-icon uk-icon-medium material-icons">menu</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Header end -->
+
+            <!-- Hero start -->
+            <div id="uni_hero" class="uni-hero uk-section uk-padding-remove uk-panel uk-overflow-hidden">
+                <div class="uk-position-top" data-uk-height-viewport="">
+                    <div class="uk-position-cover uk-background-cover uk-opacity-20" data-src="./assets/images/goblin/g4.png" data-uk-img></div>
+                </div>
+                <div class="uk-position-top uk-position-z-index-negative uk-overflow-hidden uk-blend-overlay" data-uk-height-viewport="">
+                    <img class="uk-position-top-left uk-position-fixed uk-blur-large" style="left: -4%; top: -4%" width="500" src="./assets/images/gradient-circle.svg" alt="Circle">
+                    <img class="uk-position-bottom-right uk-position-fixed uk-blur-large" style="right: -4%; bottom: -4%" width="500" src="./assets/images/gradient-circle.svg" alt="Circle">
+                </div>
+                <div class="uk-container">
+                    <div class="uk-section uk-flex-center uk-flex-middle" data-uk-height-viewport="offset-top: true;">
+                        <div class="uk-card uk-flex-center uk-text-center">
+                            <div class="uk-panel uk-width-2xlarge@m uk-position-z-index">
+                                <div>
+                                    <img width="200" src="./assets/images/goblin/text.png" alt="Logo Text">
+                                </div>
+                                <h1 class="headerrr" >Wallet Checker</h1>
+                                <input id="walletchecker" placeholder="Enter your wallet">
+                                
+                                <button type="submit" onclick="myFunction()">Check</button>
+                                <br>
+                                <p id="validate"></p>
+                                <link rel="stylesheet" href="assets/css/style.css">
+                                <script src="assets/js/main.js"></script>
+
+                                <style>
+                                    @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap')
+                                    </style>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+
+            
+
+            <!-- cta end -->
+        </div>
+
+        <!-- include scripts -->
+        <script defer src="./assets/js/jquery.min.js"></script>
+        <script defer src="./assets/js/swiper-bundle.min.js"></script>
+        <script defer src="./assets/js/feather.min.js"></script>
+        <script defer src="./assets/js/typed.min.js"></script>
+        <script defer src="./assets/js/anime.min.js"></script>
+        <script defer src="./assets/js/app.js"></script>
+        <script defer src="./assets/js/data-attr-helper.js"></script>
+        <script defer src="./assets/js/swiper-helper.js"></script>
+        <script defer src="./assets/js/typed-helper.js"></script>
+        <script defer src="./assets/js/anime-helper.js"></script>
+
+        <!-- <script defer src="./assets/js/anime-helper-defined-timelines.js"></script> -->
+    </body>
+</html>
